@@ -189,6 +189,8 @@ table {
   background-position: 50% 100%;
   background-size: contain;
   transform: translate3d(100%, 0, 0);
+  transition: 0.5s 0.5s;
+
   /* outline: 2px dashed red; */
 }
 
@@ -229,4 +231,8 @@ table {
   perspective: 800px;
   transform: rotateY(-110deg);
   transform-origin: 0%;
+}
+
+.door:hover .ilbuni {
+  transform: translate3d(0, 0, 0);
 }
