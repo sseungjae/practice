@@ -227,12 +227,12 @@ table {
   opacity: 0.7;
 }
 
-.door:hover .door-body {
+.door-opened .door-body {
   perspective: 800px;
   transform: rotateY(-110deg);
   transform-origin: 0%;
 }
 
-.door:hover .ilbuni {
+.door-opened .ilbuni {
   transform: translate3d(0, 0, 0);
 }
