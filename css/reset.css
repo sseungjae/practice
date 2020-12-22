@@ -1,238 +1,37 @@
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-code,
-img,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-legend,
-caption {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-div,
-span,
-article,
-section,
-header,
-footer,
-p,
-ul,
-li,
-fieldset,
-legend,
-label,
-a,
-nav {
-  box-sizing: border-box;
-}
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, code, img, dl, dt, dd, ol, ul, li, fieldset, legend, caption { margin: 0; padding: 0; border: 0; }
+div, span, article, section, header, footer, p, ul, li, fieldset, legend, label, a, nav { box-sizing: border-box; }
 html {
-  height: 100%;
+    height: 100%;
 }
 body {
-  min-height: 100%;
+    min-height: 100%;
 }
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.stage {
-  width: 100vw;
-  height: 100vh;
-  /* background: rgb(123, 118, 118); */
-  background-image: radial-gradient(circle, #c2e48b, #1f4e68);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.door {
-  position: relative;
-  width: 100px;
-  height: 150px;
-  /* outline: 2px dashed yellow; */
-}
-
-.door-back {
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-}
-
-.ilbuni {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100px;
-  height: 100px;
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-size: contain;
-  transform: translate3d(100%, 0, 0);
-  transition: 0.5s 0.5s;
-
-  /* outline: 2px dashed red; */
-}
-
-.door:nth-child(1) .ilbuni {
-  background-image: url(../images/ilbuni_0.png);
-}
-.door:nth-child(2) .ilbuni {
-  background-image: url(../images/ilbuni_1.png);
-}
-.door:nth-child(3) .ilbuni {
-  background-image: url(../images/ilbuni_2.png);
-}
-
-.door-body {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-}
-
-.door:nth-child(1) .door-body {
-  background: #ed553b;
-  opacity: 0.7;
-}
-
-.door:nth-child(2) .door-body {
-  background: #3caea3;
-  opacity: 0.7;
-}
-.door:nth-child(3) .door-body {
-  background: #20639b;
-  opacity: 0.7;
-}
-
-.door-opened .door-body {
-  perspective: 800px;
-  transform: rotateY(-110deg);
-  transform-origin: 0%;
-}
-
-.door-opened .ilbuni {
-  transform: translate3d(0, 0, 0);
+	border-collapse: collapse;
+	border-spacing: 0;
 }
